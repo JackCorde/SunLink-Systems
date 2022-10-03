@@ -1,0 +1,13 @@
+body{
+    background-image: url("../img/backgroundLogin.png");
+    background-size: 100%;
+}
+
+.button{
+    background-color: #E7983F !important;
+}
+
+.backAdmin{
+    background-image: url("../img/backgroundAdmin.png");
+    background-size: 100%;
+}
