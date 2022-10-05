@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.form{
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: auto;
+    margin-top: 20px;
+    width: 60%;
+    max-width: 2000px;
+    padding: 4.5em 3em;
+    border-radius: 60px;
+}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: yellow;
+}
+
+button:hover{
+    background-color: red;
+}
+
+
+h1{ 
+    font-size: 3.5em;
+}
+
+nav{
+    position: fixed;
+}
+
+body:before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(90deg, #FFFFFF, #000000, #FFFFFF);
+
+    opacity: 0.5;
+}
+
+
+.alta:before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(90deg, #FFFFFF, #FFFFFF, #FFFFFF);
+
+    opacity: 0.1;
+}
+
+.btn-small{
+    background: #d6b046;
+    border-radius: 16px;
+}
+
+.btn-large{
+    background: #d6b046;
+    border-radius: 16px;
+}
