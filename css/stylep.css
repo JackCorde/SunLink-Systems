@@ -1,0 +1,25 @@
+nav{
+    padding: 1em;
+    border-color: transparent;
+}
+
+.men{
+    border-bottom: #E8983E solid;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.alta:before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(90deg, #FFFFFF, #FFFFFF, #FFFFFF);
+
+    opacity: 0.1;
+}

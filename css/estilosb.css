@@ -1,0 +1,38 @@
+:root{
+
+ --dark-color: #1a1a1a;
+}
+
+p {
+    font-size: 18px;
+    color: var(--dark-color);
+    opacity: .7;
+    line-height: 1.8;
+    margin-bottom: 0px;
+}
+
+
+h1 { font-size: 66px; font-weight: 700; line-height: 80px; }
+h2 { font-size: 66px; margin-bottom: 30px; }
+h3 { font-size: 33px; }
+h5 { margin-bottom: 0px; }
+
+body{ 
+    background: url(../img/fn.png) ;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+
+.contenedor{
+    position: relative;
+    text-align: center;
+}
+
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
