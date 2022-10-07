@@ -30,7 +30,7 @@
          <br>
          <div class="input-field col s12">
           <textarea id="nom" name="nom" class="materialize-textarea" required pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ ]+"></textarea>
-          <label for="nom">NOMBRE(S)</label>
+          <label for="nom">NOMBRE (S)</label>
         </div>
         <br>
         <div class="input-field col s12">
