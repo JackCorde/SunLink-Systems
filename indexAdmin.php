@@ -1,4 +1,5 @@
 <?php 
+//hola
    session_start();
     include('privilegio.php');
     if(permitirAcceso($_SESSION['tipoUsuario'], 'indexAdmin')){
