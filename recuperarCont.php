@@ -18,11 +18,11 @@
             <div class="col s3"></div>
             <div class="col s6">
                 <form action="metodosUsuario.php" name="recuperar" method="post">
-                    <input type="hidden" name="opcion" value="1">
+                    <input type="hidden" name="opcion" value="3">
                     <div class="col-md-12">
-                        <label for="validationDefaultUsername" class="form-label">Correo Electronico</label>
+                        <label for="correo" class="form-label">Correo Electronico</label>
                         <div class="input-group">
-                        <input type="text" class="form-control" id="validationDefaultUsername" name="validationDefaultUsername" placeholder="ejemplo@gmail.com" aria-describedby="inputGroupPrepend2" required>
+                        <input type="text" class="form-control" id="correo" name="correo" placeholder="ejemplo@gmail.com" aria-describedby="inputGroupPrepend2" required>
                         </div>
                     </div><br><br>
                     <div class="row">
