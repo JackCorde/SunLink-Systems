@@ -14,7 +14,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SunLink Servicios</title>
+    <title>SunLink Servicios y Productos</title>
 </head>
 <body style="background-image: url(img/fondo2.png); background-repeat: repeat-x; background-size: cover; background-attachment: fixed; margin: 0; min-height: 100vh;">
     <!--<nav class="nav-extended" style="background-color: transparent; border-color:transparent;">
