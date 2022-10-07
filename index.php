@@ -41,6 +41,7 @@
 <br>
 
 <div class="row" align="center">
+  
   <div class="col s12">
     <p style="color: rgb(255, 255, 255); font-size: 70px;"><b>EMPRESA LÍDER EN DESARROLLO DE SOFTWARE</b></p>
     <hr width="80%">
@@ -49,8 +50,11 @@
     <a class="waves-effect waves-light btn-large">SUSCRIBIRSE A UN BOLETÍN</a>
     <a class="waves-effect waves-light btn-large">DARSE DE BAJA DE UN BOLETÍN</a>
   </div>
+  
 </div>
 
+      
+      
 
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
