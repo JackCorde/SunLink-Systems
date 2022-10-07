@@ -1,3 +1,8 @@
+<?php 
+   session_start();
+    include('privilegio.php');
+    if(permitirAcceso($_SESSION['tipoUsuario'], 'contratos')){
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +21,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col s5"><img src="img/logo.png" alt="" width="100%" height="100%"></div><br>
+            <div class="col s5"><img src="img/logo2.png" alt="" width="100%" height="100%"></div><br>
             <div class="col s7"><h1 style="font-size: 160%; text-align: right;">ADMINISTRADOR</h1></div>
         </div>
 
@@ -30,7 +35,7 @@
                     <li><a class="waves-effect waves-light btn-small" style="background: #FFF1FD; border-radius: 16px; color:black" href="indexAdmin.php">Usuarios Activos</a></li>
                     <li><a class="waves-effect waves-light btn-small" style="background: #FFF1FD; border-radius: 16px; color:black" href="usuariosInactivos.php">Usuarios Inactivos</a></li>
                     <li><a class="waves-effect waves-light btn-small" style="background: #FFF1FD; border-radius: 16px; color:black" href="contratos.php">Contratos</a></li>
-                    <li><a class="waves-effect waves-light btn-large" style="background: #d6b046; border-radius: 16px;">Cerrar Sesion</a></li>
+                    <li><a class="waves-effect waves-light btn-large" style="background: #d6b046; border-radius: 16px;" href="cierre_sesion.php">Cerrar Sesion</a></li>
                 </ul>
                 </div>
             </div>
@@ -41,7 +46,7 @@
         <li><a class="waves-effect btn-small" href="indexAdmin.php">Usuarios Activos</a></li>
         <li><a class="waves-effect btn-small" href="usuariosInactivos.php">Usuarios Inactivos</a></li>
         <li><a class="waves-effect btn-small" href="contratos.php">Contratos</a></li>
-        <li><a class="waves-effect btn-large">Cerrar Sesion</a></li>
+        <li><a class="waves-effect btn-large" href="cierre_sesion.php">Cerrar Sesion</a></li>
     </ul>
     </div>
 
@@ -101,3 +106,10 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 </html>
+<?php
+   }
+    else{
+        header('Location:index.php');
+    }
+
+ ?>
