@@ -1,3 +1,8 @@
+<?php 
+   session_start();
+    include('privilegio.php');
+    if(permitirAcceso($_SESSION['tipoUsuario'], 'usuariosInactivos')){
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +21,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col s5"><img src="img/logo.png" alt="" width="100%" height="100%"></div><br>
+            <div class="col s5"><img src="img/logo2.png" alt="" width="100%" height="100%"></div><br>
             <div class="col s7"><h1 style="font-size: 160%; text-align: right;">ADMINISTRADOR</h1></div>
         </div>
 
@@ -30,7 +35,7 @@
                     <li><a class="waves-effect waves-light btn-small" style="background: #FFF1FD; border-radius: 16px; color:black" href="indexAdmin.php">Usuarios Activos</a></li>
                     <li><a class="waves-effect waves-light btn-small" style="background: #FFF1FD; border-radius: 16px; color:black" href="usuariosInactivos.php">Usuarios Inactivos</a></li>
                     <li><a class="waves-effect waves-light btn-small" style="background: #FFF1FD; border-radius: 16px; color:black" href="contratos.php">Contratos</a></li>
-                    <li><a class="waves-effect waves-light btn-large" style="background: #d6b046; border-radius: 16px;">Cerrar Sesion</a></li>
+                    <li><a class="waves-effect waves-light btn-large" style="background: #d6b046; border-radius: 16px;" href="cierre_sesion.php">Cerrar Sesion</a></li>
                 </ul>
                 </div>
             </div>
@@ -41,7 +46,7 @@
         <li><a class="waves-effect btn-small" href="indexAdmin.php">Usuarios Activos</a></li>
         <li><a class="waves-effect btn-small" href="usuariosInactivos.php">Usuarios Inactivos</a></li>
         <li><a class="waves-effect btn-small" href="contratos.php">Contratos</a></li>
-        <li><a class="waves-effect btn-large">Cerrar Sesion</a></li>
+        <li><a class="waves-effect btn-large" href="cierre_sesion.php">Cerrar Sesion</a></li>
     </ul>
     </div>
 
@@ -57,18 +62,17 @@
                         <th scope="col" style="width: 5%; text-align:center">#</th>
                         <th scope="col" style="width: 25%; text-align:center">Nombre</th>
                         <th scope="col" style="width: 20%; text-align:center">Apellido Paterno</th>
-                        <th scope="col" style="width: 20%; text-align:center">Apellido Materno</th>
                         <th scope="col" style="width: 30%; text-align:center">Correo Electronico</th>
+                        <th scope="col" style="width: 30%; text-align:center">Ver</th>
                         </tr>
                     </thead>
                     <tbody style="text-align: center;">
                       <?php
-                      /*
                         include('inc/mensaje.php');
-                        include('inc/conexionDB.php');
+                        include('inc/conexion.php');
                         $num=0;
 
-                        $sql="SELECT * FROM login, usuarios WHERE login.emailLogin=usuarios.email;";
+                        $sql="SELECT * FROM usuarios WHERE usuarios.habilitado=False";
                         $consulta=$conexion->query($sql);
 
                         while($fila=mysqli_fetch_array($consulta)){
@@ -76,17 +80,10 @@
                             echo "<tr><td>".$num."</td>";
                             echo "<td>".$fila[3]."</td>";
                             echo "<td>".$fila[4]."</td>";
-                            echo "<td>".$fila[5]."</td>";
-                            echo "<td><a href='verUsuario.php?correo=".$fila[8]."' style='color:black'><i class='fa-solid fa-eye'></i></a></td>";
-                            echo "<td><a href='actualizarUsuario.php?correo=".$fila[8]."' style='color:black'><i class='fa-solid fa-pen'></i></a></td>";
-                            if($fila[9]=='Si'){
-                              echo "<td><a href='metodosUsuario.php?correo=".$fila[8]."&opcion=9' style='color:black'><i class='fa-solid fa-circle-check'></i></a></td>";
-                            }else if($fila[9]=='No'){
-                              echo "<td><a href='metodosUsuario.php?correo=".$fila[8]."&opcion=10' style='color:black'><i class='fa-solid fa-circle-xmark'></i></a></td>";
-                            }
-                            echo "<td><a href='metodosUsuario.php?correo=".$fila[8]."&opcion=11' style='color:black'><i class='fa-solid fa-trash-can'></i></a></td></tr>";
+                            echo "<td>".$fila[1]."</td>";
+                            echo "<td><a href='verUsuario.php?correo=".$fila[1]."' style='color:black'><i class='fa-solid fa-eye'></i></a></td></tr>";
                         }
-                      */?>
+                    ?>
                     </tbody>
                 </table>
             </div>
@@ -97,3 +94,10 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 </html>
+<?php
+   }
+    else{
+        header('Location:index.php');
+    }
+
+ ?>
