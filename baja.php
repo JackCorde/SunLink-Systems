@@ -25,6 +25,7 @@
        <div class="col s12">
         <br><br>
          <img src="img/logo2.1.png" alt="" width="300" height="60">
+         
          <br>
          <h3>Baja de nuestra lista</h3>
          <br>
