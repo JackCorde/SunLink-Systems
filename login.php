@@ -10,9 +10,9 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="container">
+<div class="container">
         <div class="row">
-            <div class="col s5"><img src="img/logo.png" alt="" width="100%" height="100%"></div>
+            <div class="col s5"><img src="img/logo2.png" alt="" width="100%" height="100%"></div>
             <div class="col s7"></div>
         </div>
         <div class="row">
@@ -26,21 +26,26 @@
         <div class="row">
             <div class="col s3"></div>
             <div class="col s6">
-                <form class="row g-3" method="get" action="validarLogin.php" name="login" >
+                <form class="row g-3" method="get" action="validar.php" name="login" >
                     <div class="col-md-12">
-                        <label for="validationDefaultUsername" class="form-label">Correo Electronico</label>
+                        <label for="email" class="form-label">Correo Electronico</label>
                         <div class="input-group">
-                        <input type="text" class="form-control" id="validationDefaultUsername" name="email" aria-describedby="inputGroupPrepend2" placeholder="ejemplo@gmail.com" required>
+                        <input type="text" class="form-control" id="email" name="email" aria-describedby="inputGroupPrepend2" placeholder="ejemplo@gmail.com" required>
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <label for="validationDefault01" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="validationDefault01" name="password" maxlength="10" required>
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" name="password" maxlength="15" required>
                     </div><br>
-                    <div class="col s12">
-                        <center><button class="btn btn-primary button" type="submit">Iniciar Sesión</button></center>
-                    </div>
-                </form><br>
+                    <div class="row">
+                        <div class="col s6">
+                            <center><input type="submit" id="btn" class="btn btn-primary button" name="iniciar" value="Iniciar Sesion"></center>
+                        </div>
+                </form>
+                        <div class="col s6">
+                            <center><a href="index.php"><button class="btn btn-primary button" type="button">Cancelar</button></a></center>
+                        </div>
+                    </div><br>
                 <center><a href="recuperarCont.php"><button class="btn btn-primary button" type="submit">¿Olvidaste tu contraseña?</button></a></center>
             </div>
             <div class="col s3"></div>
