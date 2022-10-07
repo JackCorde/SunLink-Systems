@@ -56,6 +56,7 @@
 <br>
 
 <div class="row" align="center">
+    
   <div class="col s12">
     <p style="color: rgb(255, 255, 255); font-size: 70px;"><b>EMPRESA LÍDER EN DESARROLLO DE SOFTWARE</b></p>
     <hr width="80%">
@@ -72,5 +73,6 @@
       <script>
         M.AutoInit();
       </script>
+        
     </body>
   </html>
