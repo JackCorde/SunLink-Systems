@@ -1,6 +1,7 @@
 <!DOCTYPE html>
   <html>
     <head>
+      
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -30,7 +31,7 @@
          <br>
          <div class="input-field col s12">
           <textarea id="textarea1" class="materialize-textarea" required pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ ]+"></textarea>
-          <label for="textarea1">NOMBRE (S)</label>
+          <label for="textarea1">NOMBRE(S)</label>
         </div>
         <br>
         <div class="input-field col s12">
